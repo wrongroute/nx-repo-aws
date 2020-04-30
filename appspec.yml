@@ -7,3 +7,9 @@ Resources:
         LoadBalancerInfo:
           ContainerName: "jobtest-app"
           ContainerPort: 8080
+        PlatformVersion: "LATEST"
+        NetworkConfiguration:
+            AwsvpcConfiguration:
+              Subnets: ["subnet-08fce2c503dae7843", "subnet-0e298fa4d35a68532"]
+              SecurityGroups: ["sg-0b87a4933bfb9c05e"]
+              AssignPublicIp: "ENABLED"
