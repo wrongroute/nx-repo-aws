@@ -8,5 +8,11 @@ def health():
         status='OK'
     )
 
+@app.route('/hello')
+def hello():
+    return jsonify(
+        status='Hello!'
+    )
+
 if __name__ == '__main__':
     app.run()
